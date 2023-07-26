@@ -22,7 +22,7 @@ import com.gateway.models.AuthResponce;
 @RequestMapping("/auth")
 public class AuthController {
 
-	private Logger logger =LoggerFactory.getLogger(AuthController.class);
+	private Logger logger =  LoggerFactory.getLogger(AuthController.class);
 	
 	@GetMapping("/login")
 	public ResponseEntity<AuthResponce>login( @RegisteredOAuth2AuthorizedClient("okta") OAuth2AuthorizedClient client,
